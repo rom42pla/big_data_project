@@ -2,10 +2,11 @@
 
 ## Overview
 
-This notebook is part of the project for the [Big Data Computing AY2020/21 course](https://github.com/gtolomei/big-data-computing) teached by Prof. Gabriele Tolomei
+This notebooks are part of the project for the [Big Data Computing AY2020/21 course](https://github.com/gtolomei/big-data-computing) teached by Prof. Gabriele Tolomei
 
-Other resources:
-- a [demo version of this notebook](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3017902888537112/3248872990014382/latest.html) without the training parts
+Resources:
+- the [notebook](https://github.com/rom42pla/big_data_project/blob/main/notebook_full.ipynb) 
+- a [demo version of the notebook](https://github.com/rom42pla/big_data_project/blob/main/notebook_demo.ipynb) without the training parts
 - a [brief presentation](https://drive.google.com/file/d/1U7q5Gj-56AYK8tfbTeIhcAZjBH98TB51/view?usp=sharing) of this project
 
 
