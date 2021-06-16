@@ -7,7 +7,7 @@ This notebooks are part of the project for the [Big Data Computing AY2020/21 cou
 Resources:
 - the [notebook with the training parts](https://github.com/rom42pla/big_data_project/blob/main/notebook_full.ipynb) (also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3331917203481792/3248872990014382/latest.html))
 - a [demo notebook](https://github.com/rom42pla/big_data_project/blob/main/notebook_demo.ipynb) without the training parts and with the evaluation, search engine and adversarial attack phases (also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3017902888537112/3248872990014382/latest.html))
-- a [brief presentation](https://drive.google.com/file/d/1U7q5Gj-56AYK8tfbTeIhcAZjBH98TB51/view?usp=sharing) of this project
+- a [brief presentation](https://github.com/rom42pla/big_data_project/blob/main/presentation.pdf) of this project (also [on Google Docs](https://drive.google.com/file/d/1U7q5Gj-56AYK8tfbTeIhcAZjBH98TB51/view?usp=sharing))
 - [preprocessed dataset’s folder](https://drive.google.com/drive/u/1/folders/1te7m9u-FkjxYeopz1AG6N4wP-GoMDyBi) on Google Drive
 
 The project has been done by:
@@ -66,7 +66,7 @@ We've chosen [STL-10](https://cs.stanford.edu/~acoates/stl10/) [_\[Coates, Lee, 
 weighted avg       0.68      0.67      0.67      8000
 ```
 
-![roc_base](roc_base.png)
+![roc_base](images/roc_base.png)
 
 #### Final model
 
@@ -97,16 +97,16 @@ weighted avg       0.68      0.67      0.67      8000
 weighted avg       0.67      0.66      0.66      8000
 ```
 
-![roc_final](roc_final.png)
+![roc_final](images/roc_final.png)
 
 ### Search engine (example)
 
-![search_engine_results_probabilities](search_engine_results_probabilities.png)
-![search_engine_results_embeddings](search_engine_results_embeddings.png)
+![search_engine_results_probabilities](images/search_engine_results_probabilities.png)
+![search_engine_results_embeddings](images/search_engine_results_embeddings.png)
 
 ### Adversarial attack (example)
 
-![adversarial_attack_example](adversarial_attack_example.jpeg)
+![adversarial_attack_example](images/adversarial_attack_example.jpeg)
 
 
 ### How to check our results?
