@@ -66,7 +66,7 @@ We've chosen [STL-10](https://cs.stanford.edu/~acoates/stl10/) [_\[Coates, Lee, 
 weighted avg       0.68      0.67      0.67      8000
 ```
 
-![roc_base](roc_final.png)
+![roc_base](roc_base.png)
 
 #### Final model
 
