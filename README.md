@@ -2,25 +2,41 @@
 
 ## Overview
 
-This notebooks are part of the project for the [Big Data Computing AY2020/21 course](https://github.com/gtolomei/big-data-computing) teached by Prof. Gabriele Tolomei
+This notebooks are part of the project for
+the [Big Data Computing AY2020/21 course](https://github.com/gtolomei/big-data-computing) teached by Prof. Gabriele
+Tolomei
 
 Resources:
-- the [notebook with the training parts](https://github.com/rom42pla/big_data_project/blob/main/notebook_full.ipynb) (also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3331917203481792/3248872990014382/latest.html))
-- a [demo notebook](https://github.com/rom42pla/big_data_project/blob/main/notebook_demo.ipynb) without the training parts and with the evaluation, search engine and adversarial attack phases (also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3017902888537112/3248872990014382/latest.html))
-- a [brief presentation](https://github.com/rom42pla/big_data_project/blob/main/presentation.pdf) of this project (also [on Google Docs](https://drive.google.com/file/d/1U7q5Gj-56AYK8tfbTeIhcAZjBH98TB51/view?usp=sharing))
-- [preprocessed dataset’s folder](https://drive.google.com/drive/u/1/folders/1te7m9u-FkjxYeopz1AG6N4wP-GoMDyBi) on Google Drive
+
+- the [notebook with the training parts](https://github.com/rom42pla/big_data_project/blob/main/notebook_training.ipynb) 
+  (also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3331917203481792/3248872990014382/latest.html))
+- a [demo notebook](https://github.com/rom42pla/big_data_project/blob/main/notebook_demo.ipynb) without the training
+  parts and with the evaluation, search engine and adversarial attack phases (
+  also [published on DataBricks](https://databricks-prod-cloudfront.cloud.databricks.com/public/4027ec902e239c93eaaa8714f173bcfc/3816168353014773/3017902888537112/3248872990014382/latest.html))
+- a [brief presentation](https://github.com/rom42pla/big_data_project/blob/main/presentation.pdf) of this project (
+  also [on Google Docs](https://drive.google.com/file/d/1U7q5Gj-56AYK8tfbTeIhcAZjBH98TB51/view?usp=sharing))
+- [preprocessed dataset’s folder](https://drive.google.com/drive/u/1/folders/1te7m9u-FkjxYeopz1AG6N4wP-GoMDyBi) on
+  Google Drive
 
 The project has been done by:
+
 - Romeo Lanzino, matricola `1753403`, email `lanzino.1753403@studenti.uniroma1.it`
 - Federico Fontana, matricola `1744946`, email `fontana.1744946@studenti.uniroma1.it`
 
 <img src="https://www.chimicifisici.it/wp-content/uploads/2019/04/Sapienza_logo-1024x307.png" alt="drawing" width="400"/>
 
 ### Task
-We have decided to tackle **semi-supervised multi-class images classification**, consisting of a dataset with both labeled and (a large amount of) unlabeled samples [_\[Van Engelen, Hoos, 2019, A survey on semi-supervised learning\]_](https://link.springer.com/content/pdf/10.1007/s10994-019-05855-6.pdf)
+
+We have decided to tackle **semi-supervised multi-class images classification**, consisting of a dataset with both
+labeled and (a large amount of) unlabeled samples [_\[Van Engelen, Hoos, 2019, A survey on semi-supervised
+learning\]_](https://link.springer.com/content/pdf/10.1007/s10994-019-05855-6.pdf)
 
 ### Dataset
-We've chosen [STL-10](https://cs.stanford.edu/~acoates/stl10/) [_\[Coates, Lee, Ng, 2011, An Analysis of Single Layer Networks in Unsupervised Feature Learning\]_](https://cs.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf), which is an image recognition dataset with a corpus of 100K unlabeled images, 5K labeled training images and 8K labeled test images, covering 10 different classes.
+
+We've chosen [STL-10](https://cs.stanford.edu/~acoates/stl10/) [_\[Coates, Lee, Ng, 2011, An Analysis of Single Layer
+Networks in Unsupervised Feature Learning\]_](https://cs.stanford.edu/~acoates/papers/coatesleeng_aistats_2011.pdf),
+which is an image recognition dataset with a corpus of 100K unlabeled images, 5K labeled training images and 8K labeled
+test images, covering 10 different classes.
 
 ### Workflow
 
@@ -30,8 +46,13 @@ We've chosen [STL-10](https://cs.stanford.edu/~acoates/stl10/) [_\[Coates, Lee, 
 - **pseudo-label** the unlabeled images using the model trained in the previous step
 - **train a second model** using also the pseudo-labeled images
 - **evaluate** the results of both models to see if there have been some improvements
-- implement an **image search engine** that, given a query image as input, returns a list of relevant images in a gallery (disjointed from the query images set) 
+- implement an **image search engine** that, given a query image as input, returns a list of relevant images in a
+  gallery (disjointed from the query images set)
 - perform an example of **adversarial attack**
+
+### How to run the notebooks
+
+Check [instructions.md](instructions.md)
 
 ## Results
 
@@ -107,11 +128,3 @@ weighted avg       0.67      0.66      0.66      8000
 ### Adversarial attack (example)
 
 ![adversarial_attack_example](images/adversarial_attack_example.jpeg)
-
-
-### How to check our results?
-Make sure to do everything on [DataBricks](https://databricks.com/) because these notebooks relies on `dbfs` and an Internet connection to work
-
-- if you're starting from scratch then just run `notebook_full.ipynb`, that also trains and saves the models to `dbfs` for faster re-use
-- if you already have the models saved to `dbfs`, just run `notebook_demo.ipynb` to check the effective results of our work
-
